@@ -23,7 +23,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/dandom98/catkin_ws/src/Week-1-8-Cognitive-robotics/turtlebot3_mogi/gazebo_models/triangle/triangle.dae</uri>
+            <uri>model://triangle/triangle.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -36,7 +36,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/dandom98/catkin_ws/src/Week-1-8-Cognitive-robotics/turtlebot3_mogi/gazebo_models/triangle/triangle.dae</uri>
+            <uri>model://triangle/triangle.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
