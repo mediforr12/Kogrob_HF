@@ -127,7 +127,7 @@ BS      = 32
 
 # initialize the model
 print("[INFO] compiling model...")
-model = build_LeNet(width=image_size, height=image_size, depth=3, classes=4)
+model = build_LeNet(width=image_size, height=image_size, depth=3, classes=10)
 opt = Adam(learning_rate=INIT_LR, decay=DECAY)
 model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
  

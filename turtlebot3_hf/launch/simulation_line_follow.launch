@@ -8,7 +8,7 @@
   <arg name="y_pos" default="0.0"/>
   <arg name="z_pos" default="0.05"/>
 
-  <arg name="world" default="$(find turtlebot3_hf)/worlds/dark_background.world"/>
+  <arg name="world" default="$(find turtlebot3_hf)/worlds/monza.world"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(arg world)"/>
