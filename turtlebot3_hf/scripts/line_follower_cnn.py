@@ -208,13 +208,11 @@ class cvThread(threading.Thread):
         return img
     
     def drawTrajectory(self, position, color):
-        self.bot_path.append(position)
-        self.path_color.append(color)
+        #self.bot_path.append(position)
+        #self.path_color.append(color)
         plt.figure(1)
         plt.ion()
-        plt.scatter([point[0] for point in self.bot_path],
-                    [point[1] for point in self.bot_path],
-                    c=self.path_color)
+        plt.scatter(position[0],position[1],c=color)
         plt.axis([-6,7,-2,5])
         plt.pause(0.01)
         plt.show(block=False)
