@@ -11,7 +11,6 @@ fig = plt.figure()
 fig.add_subplot(1,1,1)
 bot_path=[[1,1],[2,2],[3,3],[4,4],[5,5]]
 classes= [[1,0,0],[0,0,1],[1,0,1],[1,1,0],[0,1,0]]
-path_color=matplotlib.colors.LinearSegmentedColormap.from_list('custom',['red','blue','yellow','green'])
 plt.scatter([point[0] for point in bot_path],
           [point[1] for point in bot_path],
           c=classes)
