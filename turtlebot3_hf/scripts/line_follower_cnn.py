@@ -103,9 +103,9 @@ class cvThread(threading.Thread):
 
             # Process the current image
             mask1 = self.processImage(self.image)
-            mask2 = self.drawTrajectory(self.position, self.color)
+            self.drawTrajectory(self.position, self.color)
             # Add processed images as small images on top of main image
-            result = self.addSmallPictures(self.image, [mask1, mask2])
+            result = self.addSmallPictures(self.image, [mask1])
             cv2.imshow("frame", result)
 
             # Check for 'q' key to exit
@@ -128,9 +128,14 @@ class cvThread(threading.Thread):
         
         with tf.device('/gpu:0'):
             prediction = model(image, training=False)
-            prediction_dir = np.argmax(prediction[0:4])
-            prediction_color = np.argmax(prediction[4:10])
-                
+            prediction_dir = np.argmax(prediction[0][0:4])
+            prediction_color = np.argmax(prediction[0][4:10])
+            print("#######################################")
+            print(prediction_dir)
+            print("#######################################")
+            print("#######################################")
+            print(prediction_color)
+            print("#######################################")    
         print("Prediction %d, elapsed time %.3f" % (prediction_dir, time.time()-self.last_time))
         self.last_time = time.time()
         if prediction_color == 0: # Red
@@ -205,17 +210,14 @@ class cvThread(threading.Thread):
     def drawTrajectory(self, position, color):
         self.bot_path.append(position)
         self.path_color.append(color)
-        fig = plt.figure()
-        plot = fig.add_subplot(1,1,1)
-        plot.plot([point[0] for point in self.bot_path],
-                 [point[1] for point in self.bot_path],
-                 color=self.path_color)
-        img = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep='')
-        img = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
-        img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
-        
-        return cv2.resize(img,(image_size,image_size))
-
+        plt.figure(1)
+        plt.ion()
+        plt.scatter([point[0] for point in self.bot_path],
+                    [point[1] for point in self.bot_path],
+                    c=self.path_color)
+        plt.axis([-6,7,-2,5])
+        plt.pause(0.01)
+        plt.show(block=False)
 
 def queueMonocular(msg):
     try:

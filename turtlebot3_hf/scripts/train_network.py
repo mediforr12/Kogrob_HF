@@ -121,9 +121,9 @@ testY = to_categorical(testY, num_classes=10)
 # initialize the number of epochs to train for, initial learning rate,
 # and batch size
 EPOCHS  = 60
-INIT_LR = 0.001
+INIT_LR = 0.0001
 DECAY   = INIT_LR / EPOCHS
-BS      = 32
+BS      = 64
 
 # initialize the model
 print("[INFO] compiling model...")
