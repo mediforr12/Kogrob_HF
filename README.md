@@ -116,7 +116,10 @@ A kamera által látott kép mutatására a segédletben található programrés
 
 A modellkörnyezet felépítéséhez a `/turtlebot3_hf/launch/simulation_line_follow.launch`  lauch fájlt használjuk, amit a segédlethez képest annyival módosítottunk, hogy az Rviz elindítására vonatkkozó részt eltávolítottuk, mert arra nem volt szükségünk. 
 Végeredmény a `line_follower_cnn` node elindítása után:
-<a href="https://youtu.be/tF_Jre2SCm4"><img height="400" src="./assets/62999984/351ad151-44fb-4c4b-a2f7-5e7c0fc9f2eb"></a>
+
+![image](https://github.com/mediforr12/Kogrob_HF/assets/62999984/351ad151-44fb-4c4b-a2f7-5e7c0fc9f2eb)
+
+[**Videó**](https://www.youtube.com/watch?v=tF_Jre2SCm4)
 
 ## Telepítés és indítás
 
