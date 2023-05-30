@@ -87,10 +87,10 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>2764 297000000</sim_time>
-      <real_time>26 553627126</real_time>
-      <wall_time>1684581576 874345097</wall_time>
-      <iterations>26494</iterations>
+      <sim_time>2849 876000000</sim_time>
+      <real_time>32 680366153</real_time>
+      <wall_time>1685436822 201256850</wall_time>
+      <iterations>32621</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -112,10 +112,10 @@
         </link>
       </model>
       <model name='triangle'>
-        <pose>3.52706 -0.010984 -0.081329 0 -0 0.207343</pose>
+        <pose>3.61788 -0.021294 -0.086575 0 0 -0.027075</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>3.52706 -0.010984 -0.081329 0 -0 0.207343</pose>
+          <pose>3.61788 -0.021294 -0.086575 0 0 -0.027075</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -223,7 +223,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>5.26065 -0.282887 0.983206 -0 0.535243 2.79793</pose>
+        <pose>7.05646 0.12225 1.42824 0 0.451243 3.06593</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -251,7 +251,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://triangle.dae</uri>
+              <uri>model://triangle/triangle.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>

@@ -213,7 +213,7 @@ class cvThread(threading.Thread):
         plt.figure(1)
         plt.ion()
         plt.scatter(position[0],position[1],c=color)
-        plt.axis([-6,7,-2,5])
+        plt.axis([-6,7,-4,5])
         plt.pause(0.01)
         plt.show(block=False)
 
