@@ -17,6 +17,8 @@ egy külön python node segítségével ábrázoljuk. A modellt szerettük volna
 
 ## Feladat megvalósítása <a name="megval"></a>
 
+Az alkalmazott függvények, logikák és scriptek nagymértékben támaszkodnak az [óra segédletre](https://github.com/MOGI-ROS/Week-1-8-Cognitive-robotics).
+
 A feladatunkhoz az F1-es Monza nevű pályát vettük alapul, kiegészítve egy boxutca szerűséggel, ahova a robotot egy tábla segítségével lehet kiterelni.
 A pályát Blender-ben hoztuk létre egy bezier görbe segítségével. Először kialakítottuk a pálya vonalvezetését, majd ráillesztettük az úttestet jelképező modellelemet. Ezt követően elkészítettük a tábla modellt, amit a kitereléshez fogunk használni.
 
