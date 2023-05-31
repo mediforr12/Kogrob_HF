@@ -2,12 +2,11 @@
 Baróthy_Berencsi_Dankó_Tancsa
 
 ## Tartalomjegyzék
-1. [Feladat leírása](##Feladat-leírása)  
-2. [Feladat megvalósítása](##Feladat-megvalósítása)  
-3. [Telepítés és indítás](##Telepítés-és-indítás) 
+1. [Feladat leírása](#leiras)  
+2. [Feladat megvalósítása](#megval)  
+3. [Telepítés és indítás](#run) 
 
-
-## Feladat leírása
+## Feladat leírása <a name="leiras"></a>
 
 Feladatunk vonalkövetés megvalósítása turtlebottal neurális 
 háló segítségével.
@@ -16,7 +15,7 @@ milyen színű vonalon milyen sebességgel közlekedjen. A
 robot által bejárt út 2D-s felülnézeti reprezentációját 
 egy külön python node segítségével ábrázoljuk. A modellt szerettük volna feltanítani arra az eshetőségre is, hogy egy táblát meglátva 
 
-## Feladat megvalósítása
+## Feladat megvalósítása <a name="megval"></a>
 
 A feladatunkhoz az F1-es Monza nevű pályát vettük alapul, kiegészítve egy boxutca szerűséggel, ahova a robotot egy tábla segítségével lehet kiterelni.
 A pályát Blender-ben hoztuk létre egy bezier görbe segítségével. Először kialakítottuk a pálya vonalvezetését, majd ráillesztettük az úttestet jelképező modellelemet. Ezt követően elkészítettük a tábla modellt, amit a kitereléshez fogunk használni.
@@ -121,7 +120,7 @@ Végeredmény a `line_follower_cnn` node elindítása után:
 
 [**Videó**](https://www.youtube.com/watch?v=tF_Jre2SCm4)
 
-## Telepítés és indítás
+## Telepítés és indítás <a name="run"></a>
 
 A házifeladat megvalósítása során [ROS Noetic](http://wiki.ros.org/noetic/Installation)-et és Windows WSL2 Linux subsystemet használtunk Ubuntu-20.04 disztribúcióval.
 A ROS feltelepítéséhez nagy segítségget nyújtott a [How to Install ROS Noetic on Ubuntu 20.04](https://varhowto.com/install-ros-noetic-ubuntu-20-04/) című útmutató.
@@ -216,3 +215,5 @@ Ebben a terminálablakban le is futtathatjuk a vonalkövetéshez készített scr
 ```bash
 rosrun turtlebot3_hf line_follower_cnn.py
 ```
+
+
