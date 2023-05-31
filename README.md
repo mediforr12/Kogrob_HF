@@ -157,7 +157,9 @@ source ~/catkin_ws/devel/setup.bash
 Figyeljünk arra, hogy azt a workspace-t source-oljuk, amibe dolgozni szeretnénk és lépjünk az src mappába.
 
 A turtlebot3 szimulációhoz használt alapcsomagjainak GIT repoját töltsük be a workspace-ünk src mappájába:
+
 [turtlebot3_msgs](http://wiki.ros.org/turtlebot3_msgs)
+
 [turtlebot3_simulations](http://wiki.ros.org/turtlebot3_simulations)
 
 ```bash
